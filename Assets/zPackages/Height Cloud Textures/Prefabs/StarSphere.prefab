@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4952295275492440}
   - component: {fileID: 33413111227873178}
   - component: {fileID: 23960613734205064}
+  - component: {fileID: 114862819467469116}
   m_Layer: 0
   m_Name: StarSphere
   m_TagString: Untagged
@@ -82,3 +83,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1016399693154292}
   m_Mesh: {fileID: 4300000, guid: f4001e3c489026e4699c75caea0b2a16, type: 3}
+--- !u!114 &114862819467469116
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1016399693154292}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24cbc9353632588449a6e1ebba69a04e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startColor: {r: 1, g: 1, b: 1, a: 0}
+  endColor: {r: 1, g: 1, b: 1, a: 1}
+  delay: 0
+  speed: 0.1

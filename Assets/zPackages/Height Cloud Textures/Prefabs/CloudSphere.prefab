@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4103735725417144}
   - component: {fileID: 33161587400872474}
   - component: {fileID: 23834251349696136}
+  - component: {fileID: 114925908277719008}
   m_Layer: 0
   m_Name: CloudSphere
   m_TagString: Untagged
@@ -82,3 +83,18 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1272741804714680}
   m_Mesh: {fileID: 4300000, guid: f4001e3c489026e4699c75caea0b2a16, type: 3}
+--- !u!114 &114925908277719008
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1272741804714680}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24cbc9353632588449a6e1ebba69a04e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startColor: {r: 1, g: 1, b: 1, a: 0}
+  endColor: {r: 1, g: 1, b: 1, a: 1}
+  delay: 0
+  speed: 0.1

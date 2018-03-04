@@ -137,6 +137,46 @@ Transform:
   m_PrefabParentObject: {fileID: 4919998450154112, guid: e698655b668bb494789ed7220e6446fc,
     type: 2}
   m_PrefabInternal: {fileID: 535885191}
+--- !u!1 &205084136 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1863729179899788, guid: 2eff1d5d491139e4e9606c592ae5fdfc,
+    type: 2}
+  m_PrefabInternal: {fileID: 2132027239}
+--- !u!114 &205084137
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 205084136}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a84ef68d125d0548b28a32032f44f73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCamera: {fileID: 137656213}
+  rotate: 1
+  rotateAxis: {x: 1, y: 0, z: 0}
+  rotateSpeed: 10
+  scale: 1
+  scaleStart: 1
+  scaleEnd: 2
+  scaleSpeed: 1
+  bounce: 0
+  bounceMagnitude: 1
+  bounceSpeed: 1
+  moveTowardsPlayer: 0
+  moveSpeed: 1
+  minDistance: 0.5
+  showDistanceInLog: 0
+  playSound: 0
+  soundToPlay: {fileID: 0}
+  volume: 1
+  appearBehindPlayer: 1
+  degreeThresholdToAppear: 100
+  showAngleInLog: 0
+  globalAppearanceInterval: 5
+  appearOnTimer: 1
+  appearTimer: 1
 --- !u!1 &206568495
 GameObject:
   m_ObjectHideFlags: 0
@@ -1005,15 +1045,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4686742437401372, guid: dae1babcba4c8054ab884011864f5d48, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 10.93
+      value: 19.5
       objectReference: {fileID: 0}
     - target: {fileID: 4686742437401372, guid: dae1babcba4c8054ab884011864f5d48, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 0.72
+      value: 0.7
       objectReference: {fileID: 0}
     - target: {fileID: 4686742437401372, guid: dae1babcba4c8054ab884011864f5d48, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -13.59
+      value: -25.9
       objectReference: {fileID: 0}
     - target: {fileID: 4686742437401372, guid: dae1babcba4c8054ab884011864f5d48, type: 2}
       propertyPath: m_LocalRotation.x
@@ -1097,6 +1137,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 23629345772183602, guid: 7059510e159b1c047b15ccf9f735390a,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: e143fbf1f63cb7d4ab6f88cc65468553, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7059510e159b1c047b15ccf9f735390a, type: 2}
   m_IsPrefabParent: 0
@@ -2312,7 +2357,7 @@ MonoBehaviour:
   mainCamera: {fileID: 137656213}
   rotate: 1
   rotateAxis: {x: 0, y: 1, z: 0}
-  rotateSpeed: 20
+  rotateSpeed: 6
   scale: 0
   scaleStart: 1
   scaleEnd: 2
@@ -3216,7 +3261,7 @@ GameObject:
   m_PrefabParentObject: {fileID: 1217281346599680, guid: dae1babcba4c8054ab884011864f5d48,
     type: 2}
   m_PrefabInternal: {fileID: 579471670}
---- !u!114 &1941999578
+--- !u!114 &1941999576
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -3229,21 +3274,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mainCamera: {fileID: 137656213}
   rotate: 0
-  rotateAxis: {x: 0, y: 1, z: 0}
-  rotateSpeed: 2
-  scale: 1
-  scaleStart: 246
-  scaleEnd: 500
+  rotateAxis: {x: 1, y: 0, z: 0}
+  rotateSpeed: 1
+  scale: 0
+  scaleStart: 50
+  scaleEnd: 200
   scaleSpeed: 1
   bounce: 0
-  bounceMagnitude: 0.1
+  bounceMagnitude: 1
   bounceSpeed: 1
-  moveTowardsPlayer: 0
-  moveSpeed: 2
-  minDistance: 4
+  moveTowardsPlayer: 1
+  moveSpeed: 0.3
+  minDistance: 9
   showDistanceInLog: 1
   playSound: 1
-  soundToPlay: {fileID: 8300000, guid: cac560cfb14de71439fd5f3771d2269d, type: 3}
+  soundToPlay: {fileID: 8300000, guid: 5897aeed9b676024fbb8c694b421a861, type: 3}
   volume: 1
   appearBehindPlayer: 1
   degreeThresholdToAppear: 100
@@ -3545,16 +3590,16 @@ MonoBehaviour:
   rotate: 0
   rotateAxis: {x: 0, y: 1, z: 0}
   rotateSpeed: 2
-  scale: 0
-  scaleStart: 1
-  scaleEnd: 2
+  scale: 1
+  scaleStart: 5
+  scaleEnd: 60
   scaleSpeed: 0
   bounce: 0
   bounceMagnitude: 0.1
   bounceSpeed: 1
   moveTowardsPlayer: 1
   moveSpeed: 2
-  minDistance: 4
+  minDistance: 9
   showDistanceInLog: 0
   playSound: 1
   soundToPlay: {fileID: 8300000, guid: cac560cfb14de71439fd5f3771d2269d, type: 3}
@@ -3668,6 +3713,36 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 0.837785
       objectReference: {fileID: 0}
+    - target: {fileID: 23904774711064830, guid: 2eff1d5d491139e4e9606c592ae5fdfc,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 90d2044e953bf7f44af47a47d18dedc4, type: 2}
+    - target: {fileID: 23510905285858988, guid: 2eff1d5d491139e4e9606c592ae5fdfc,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 90d2044e953bf7f44af47a47d18dedc4, type: 2}
+    - target: {fileID: 23472377365079664, guid: 2eff1d5d491139e4e9606c592ae5fdfc,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 90d2044e953bf7f44af47a47d18dedc4, type: 2}
+    - target: {fileID: 23180725873818508, guid: 2eff1d5d491139e4e9606c592ae5fdfc,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 90d2044e953bf7f44af47a47d18dedc4, type: 2}
+    - target: {fileID: 23883747798799666, guid: 2eff1d5d491139e4e9606c592ae5fdfc,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 90d2044e953bf7f44af47a47d18dedc4, type: 2}
+    - target: {fileID: 23752536610569458, guid: 2eff1d5d491139e4e9606c592ae5fdfc,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 90d2044e953bf7f44af47a47d18dedc4, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2eff1d5d491139e4e9606c592ae5fdfc, type: 2}
   m_IsPrefabParent: 0

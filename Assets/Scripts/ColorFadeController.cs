@@ -11,7 +11,7 @@ public class ColorFadeController : MonoBehaviour {
 
   private void Start () {
     mRenderer = gameObject.GetComponent<MeshRenderer>();
-    StartCoroutine(Fade());
+    if (mRenderer != null) StartCoroutine(Fade());
   }
 
   private IEnumerator Fade () {

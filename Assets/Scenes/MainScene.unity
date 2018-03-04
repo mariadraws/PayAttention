@@ -128,10 +128,66 @@ Transform:
   m_PrefabParentObject: {fileID: 4441164886544214, guid: 7f1c0e7368830734f84b353edd459688,
     type: 2}
   m_PrefabInternal: {fileID: 805539508}
---- !u!4 &137656213 stripped
+--- !u!1 &102462570
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 102462572}
+  - component: {fileID: 102462571}
+  m_Layer: 0
+  m_Name: BackgroundMusic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &102462571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 102462570}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a84ef68d125d0548b28a32032f44f73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCameraName: FirstPersonCharacter
+  appearTimer: 1
+  rotate: 0
+  rotateAxis: {x: 1, y: 0, z: 0}
+  rotateSpeed: 1
+  scale: 0
+  scaleStart: 1
+  scaleEnd: 2
+  scaleSpeed: 1
+  bounce: 0
+  bounceMagnitude: 1
+  bounceSpeed: 1
+  moveTowardsPlayer: 0
+  moveSpeed: 1
+  minDistance: 0.5
+  showDistanceInLog: 0
+  playSound: 1
+  soundToPlay: {fileID: 8300000, guid: 4ac4f96d6a21c764cb32b1fac9aa3715, type: 3}
+  volume: 1
+  loop: 1
+--- !u!4 &102462572
 Transform:
-  m_PrefabParentObject: {fileID: 400002, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
-  m_PrefabInternal: {fileID: 1343559621}
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 102462570}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &195682060 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4919998450154112, guid: e698655b668bb494789ed7220e6446fc,
@@ -153,7 +209,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a84ef68d125d0548b28a32032f44f73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainCamera: {fileID: 137656213}
+  mainCameraName: FirstPersonCharacter
+  appearTimer: 1
   rotate: 1
   rotateAxis: {x: 1, y: 0, z: 0}
   rotateSpeed: 10
@@ -171,12 +228,7 @@ MonoBehaviour:
   playSound: 0
   soundToPlay: {fileID: 0}
   volume: 1
-  appearBehindPlayer: 1
-  degreeThresholdToAppear: 100
-  showAngleInLog: 0
-  globalAppearanceInterval: 5
-  appearOnTimer: 1
-  appearTimer: 1
+  loop: 0
 --- !u!1 &206568495
 GameObject:
   m_ObjectHideFlags: 0
@@ -316,7 +368,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1016399693154292, guid: a012e871c8151e74f86fcde962781024, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1016399693154292, guid: a012e871c8151e74f86fcde962781024, type: 2}
       propertyPath: m_Name
@@ -338,6 +390,11 @@ Prefab:
     - target: {fileID: 4952295275492440, guid: a012e871c8151e74f86fcde962781024, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0.59800005
+      objectReference: {fileID: 0}
+    - target: {fileID: 114862819467469116, guid: a012e871c8151e74f86fcde962781024,
+        type: 2}
+      propertyPath: delay
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a012e871c8151e74f86fcde962781024, type: 2}
@@ -691,6 +748,97 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: c59e906d8fba6a644ad9e26c8502c1f5, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &453097673
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 453097676}
+  - component: {fileID: 453097675}
+  - component: {fileID: 453097674}
+  m_Layer: 0
+  m_Name: dancing-carlton_0
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!95 &453097674
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 453097673}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 919badcac17733d45af2c3ad24b3ddac, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+--- !u!212 &453097675
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 453097673}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: f92ebb47c98abbd41af2ff3f38b95a96, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 2.88, y: 2.9}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+--- !u!4 &453097676
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 453097673}
+  m_LocalRotation: {x: -0, y: -0.3448067, z: -0, w: 0.93867373}
+  m_LocalPosition: {x: 15.120001, y: -6.18, z: -18.38981}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1771994023}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: -40.34, z: 0}
 --- !u!1 &481364394
 GameObject:
   m_ObjectHideFlags: 0
@@ -2080,7 +2228,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1272741804714680, guid: 2bc57d3e632c80b4ca225af3409afc2a, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1272741804714680, guid: 2bc57d3e632c80b4ca225af3409afc2a, type: 2}
       propertyPath: m_StaticEditorFlags
@@ -2354,7 +2502,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a84ef68d125d0548b28a32032f44f73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainCamera: {fileID: 137656213}
+  mainCameraName: FirstPersonCharacter
+  appearTimer: 1
   rotate: 1
   rotateAxis: {x: 0, y: 1, z: 0}
   rotateSpeed: 6
@@ -2372,12 +2521,7 @@ MonoBehaviour:
   playSound: 1
   soundToPlay: {fileID: 8300000, guid: cac560cfb14de71439fd5f3771d2269d, type: 3}
   volume: 1
-  appearBehindPlayer: 1
-  degreeThresholdToAppear: 100
-  showAngleInLog: 0
-  globalAppearanceInterval: 5
-  appearOnTimer: 0
-  appearTimer: 1
+  loop: 0
 --- !u!1 &1219429329
 GameObject:
   m_ObjectHideFlags: 0
@@ -2594,6 +2738,24 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1343559622 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 100002, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
+  m_PrefabInternal: {fileID: 1343559621}
+--- !u!114 &1343559623
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1343559622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df8e1d778abf442e4bec449c360e9e1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fadeTime: 2
+  fadeColor: {r: 1, g: 1, b: 1, a: 1}
+  fadeOnStart: 1
 --- !u!1 &1343921366
 GameObject:
   m_ObjectHideFlags: 0
@@ -2829,7 +2991,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1016399693154292, guid: a012e871c8151e74f86fcde962781024, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1016399693154292, guid: a012e871c8151e74f86fcde962781024, type: 2}
       propertyPath: m_Name
@@ -2838,6 +3000,11 @@ Prefab:
     - target: {fileID: 4952295275492440, guid: a012e871c8151e74f86fcde962781024, type: 2}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 32.049
+      objectReference: {fileID: 0}
+    - target: {fileID: 114862819467469116, guid: a012e871c8151e74f86fcde962781024,
+        type: 2}
+      propertyPath: delay
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a012e871c8151e74f86fcde962781024, type: 2}
@@ -3127,7 +3294,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1771994023
 Transform:
   m_ObjectHideFlags: 0
@@ -3143,6 +3310,7 @@ Transform:
   - {fileID: 1343921370}
   - {fileID: 743278301}
   - {fileID: 857399264}
+  - {fileID: 453097676}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3256,6 +3424,50 @@ Transform:
   m_PrefabParentObject: {fileID: 4089934119596788, guid: 332f0a15be67ad344a25ecc1c62f0442,
     type: 2}
   m_PrefabInternal: {fileID: 515449368}
+--- !u!1 &1904432089
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1904432091}
+  - component: {fileID: 1904432090}
+  m_Layer: 0
+  m_Name: Transition Manager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1904432090
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1904432089}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 549dd18ff36361d4db1b955f403ef746, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneToLoad: Lobby
+  cameraName: FirstPersonCharacter
+  autoLoad: 1
+  autoLoadDelay: 90
+--- !u!4 &1904432091
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1904432089}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 11.967144, y: -4.422885, z: 16.179134}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1941999575 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1217281346599680, guid: dae1babcba4c8054ab884011864f5d48,
@@ -3272,7 +3484,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a84ef68d125d0548b28a32032f44f73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainCamera: {fileID: 137656213}
+  mainCameraName: FirstPersonCharacter
+  appearTimer: 1
   rotate: 0
   rotateAxis: {x: 1, y: 0, z: 0}
   rotateSpeed: 1
@@ -3290,12 +3503,7 @@ MonoBehaviour:
   playSound: 1
   soundToPlay: {fileID: 8300000, guid: 5897aeed9b676024fbb8c694b421a861, type: 3}
   volume: 1
-  appearBehindPlayer: 1
-  degreeThresholdToAppear: 100
-  showAngleInLog: 0
-  globalAppearanceInterval: 5
-  appearOnTimer: 0
-  appearTimer: 1
+  loop: 0
 --- !u!1001 &1942596155
 Prefab:
   m_ObjectHideFlags: 0
@@ -3586,7 +3794,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6a84ef68d125d0548b28a32032f44f73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainCamera: {fileID: 137656213}
+  mainCameraName: FirstPersonCharacter
+  appearTimer: 1
   rotate: 0
   rotateAxis: {x: 0, y: 1, z: 0}
   rotateSpeed: 2
@@ -3604,12 +3813,7 @@ MonoBehaviour:
   playSound: 1
   soundToPlay: {fileID: 8300000, guid: cac560cfb14de71439fd5f3771d2269d, type: 3}
   volume: 1
-  appearBehindPlayer: 1
-  degreeThresholdToAppear: 100
-  showAngleInLog: 0
-  globalAppearanceInterval: 5
-  appearOnTimer: 0
-  appearTimer: 1
+  loop: 0
 --- !u!4 &2021404046 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4713373804016790, guid: 4d3a3ee2cae7b4f4b95e8f8e541b0751,

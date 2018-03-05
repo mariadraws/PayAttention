@@ -4601,19 +4601,19 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4736523372318328, guid: 2ac9d33a13cd994468b9ee47c267c52a, type: 2}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: -0.013889007
       objectReference: {fileID: 0}
     - target: {fileID: 4736523372318328, guid: 2ac9d33a13cd994468b9ee47c267c52a, type: 2}
       propertyPath: m_LocalRotation.y
-      value: -0.40852934
+      value: -0.5069151
       objectReference: {fileID: 0}
     - target: {fileID: 4736523372318328, guid: 2ac9d33a13cd994468b9ee47c267c52a, type: 2}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: -0.032538842
       objectReference: {fileID: 0}
     - target: {fileID: 4736523372318328, guid: 2ac9d33a13cd994468b9ee47c267c52a, type: 2}
       propertyPath: m_LocalRotation.w
-      value: 0.91274524
+      value: 0.86126965
       objectReference: {fileID: 0}
     - target: {fileID: 4736523372318328, guid: 2ac9d33a13cd994468b9ee47c267c52a, type: 2}
       propertyPath: m_RootOrder
@@ -4625,7 +4625,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4736523372318328, guid: 2ac9d33a13cd994468b9ee47c267c52a, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: -48.225002
+      value: -60.891003
+      objectReference: {fileID: 0}
+    - target: {fileID: 4736523372318328, guid: 2ac9d33a13cd994468b9ee47c267c52a, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: -3.2630002
+      objectReference: {fileID: 0}
+    - target: {fileID: 4736523372318328, guid: 2ac9d33a13cd994468b9ee47c267c52a, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: -2.4090002
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2ac9d33a13cd994468b9ee47c267c52a, type: 2}
@@ -4654,13 +4662,13 @@ Transform:
   m_PrefabParentObject: {fileID: 400002, guid: 183b135171b9362409b44e305b328e87, type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 910716096}
-  m_LocalRotation: {x: 0.1279975, y: -0.0016128523, z: 0.04579381, w: -0.99071544}
-  m_LocalPosition: {x: -7.950001, y: -7.55, z: -36.70981}
+  m_LocalRotation: {x: 0.1303536, y: 0.053677943, z: 0.038579356, w: -0.98926145}
+  m_LocalPosition: {x: -3.8, y: -12.9, z: -55.3}
   m_LocalScale: {x: 1.0209556, y: 1.020956, z: 1.0209563}
   m_Children: []
   m_Father: {fileID: 1421362289}
   m_RootOrder: 26
-  m_LocalEulerAnglesHint: {x: -14.683001, y: -359.116, z: -5.407}
+  m_LocalEulerAnglesHint: {x: -15.192, y: -365.718, z: -3.703}
 --- !u!23 &910716098
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4724,12 +4732,12 @@ MonoBehaviour:
   scaleStart: 1
   scaleEnd: 20
   scaleSpeed: 1
-  bounce: 0
+  bounce: 1
   bounceMagnitude: 1
   bounceSpeed: 1
   moveTowardsPlayer: 1
-  moveSpeed: 0.3
-  minDistance: 20
+  moveSpeed: 0.05
+  minDistance: 30
   showDistanceInLog: 0
   playSound: 1
   soundToPlay: {fileID: 0}
@@ -6673,8 +6681,8 @@ MonoBehaviour:
   rotateAxis: {x: 0, y: 1, z: 0}
   rotateSpeed: 10
   scale: 1
-  scaleStart: 1
-  scaleEnd: 2
+  scaleStart: 10
+  scaleEnd: 34
   scaleSpeed: 1
   bounce: 0
   bounceMagnitude: 1
@@ -7134,13 +7142,13 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1566608956}
-  m_LocalRotation: {x: 0.15180565, y: 0.2474311, z: 0.010311532, w: 0.9568838}
-  m_LocalPosition: {x: -12.973, y: -3.839, z: -2.722}
+  m_LocalRotation: {x: 0.15925775, y: 0.26811117, z: 0.011389655, w: 0.95006514}
+  m_LocalPosition: {x: -12.974, y: -3.838, z: -2.724}
   m_LocalScale: {x: 0.81369936, y: 1.635577, z: 0.84521306}
   m_Children: []
   m_Father: {fileID: 1421362289}
   m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 16.584002, y: 29.824001, z: 5.6800003}
+  m_LocalEulerAnglesHint: {x: 17.248001, y: 32.495003, z: 6.4350004}
 --- !u!114 &1566608962
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8380,8 +8388,8 @@ MonoBehaviour:
   bounceMagnitude: 1
   bounceSpeed: 1
   moveTowardsPlayer: 1
-  moveSpeed: 0.5
-  minDistance: 15
+  moveSpeed: 0.1
+  minDistance: 20
   showDistanceInLog: 0
   playSound: 0
   soundToPlay: {fileID: 0}

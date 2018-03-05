@@ -1344,7 +1344,6 @@ GameObject:
   - component: {fileID: 366130439}
   - component: {fileID: 366130438}
   - component: {fileID: 366130444}
-  - component: {fileID: 366130443}
   m_Layer: 0
   m_Name: Ground (1)
   m_TagString: Untagged
@@ -1420,7 +1419,7 @@ Transform:
   m_Father: {fileID: 1421362289}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 39.184002, z: 0}
---- !u!114 &366130443
+--- !u!114 &366130444
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -1428,43 +1427,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 366130437}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6a84ef68d125d0548b28a32032f44f73, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mainCameraName: FirstPersonCharacter
-  appearTimer: 20
-  rotate: 0
-  rotateAxis: {x: 1, y: 0, z: 0}
-  rotateSpeed: 1
-  scale: 0
-  scaleStart: 1
-  scaleEnd: 2
-  scaleSpeed: 1
-  bounce: 0
-  bounceMagnitude: 1
-  bounceSpeed: 1
-  moveTowardsPlayer: 0
-  moveSpeed: 1
-  minDistance: 0.5
-  showDistanceInLog: 0
-  playSound: 0
-  soundToPlay: {fileID: 0}
-  volume: 1
-  loop: 0
---- !u!114 &366130444
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 366130437}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 24cbc9353632588449a6e1ebba69a04e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   startColor: {r: 1, g: 1, b: 1, a: 0}
-  endColor: {r: 1, g: 1, b: 1, a: 0}
-  delay: 20
+  endColor: {r: 1, g: 1, b: 1, a: 1}
+  delay: 15
   speed: 0.1
 --- !u!1 &371612588
 GameObject:
@@ -5041,7 +5009,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1272741804714680, guid: 2bc57d3e632c80b4ca225af3409afc2a, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1272741804714680, guid: 2bc57d3e632c80b4ca225af3409afc2a, type: 2}
       propertyPath: m_StaticEditorFlags

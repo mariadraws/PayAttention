@@ -1991,13 +1991,29 @@ MonoBehaviour:
   m_GameObject: {fileID: 453097673}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 24cbc9353632588449a6e1ebba69a04e, type: 3}
+  m_Script: {fileID: 11500000, guid: 6a84ef68d125d0548b28a32032f44f73, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  startColor: {r: 0, g: 1, b: 0.048275948, a: 0}
-  endColor: {r: 1, g: 0, b: 0, a: 1}
-  delay: 3
-  speed: 0.1
+  mainCameraName: FirstPersonCharacter
+  appearTimer: 3
+  rotate: 1
+  rotateAxis: {x: 1, y: 0, z: 0}
+  rotateSpeed: 1
+  scale: 0
+  scaleStart: 1
+  scaleEnd: 2
+  scaleSpeed: 1
+  bounce: 0
+  bounceMagnitude: 1
+  bounceSpeed: 1
+  moveTowardsPlayer: 0
+  moveSpeed: 1
+  minDistance: 0.5
+  showDistanceInLog: 0
+  playSound: 0
+  soundToPlay: {fileID: 0}
+  volume: 1
+  loop: 0
 --- !u!1 &457442704
 GameObject:
   m_ObjectHideFlags: 0

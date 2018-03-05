@@ -46,14 +46,14 @@ public class ObjectBehaviourController : MonoBehaviour {
   private AudioSource source;
 
   private void Start () {
-    MeshRenderer[] mrs = transform.GetComponentsInChildren<MeshRenderer>();
-    foreach (MeshRenderer mr in mrs) mr.enabled = false;
+    Renderer[] mrs = transform.GetComponentsInChildren<Renderer>();
+    foreach (Renderer mr in mrs) mr.enabled = false;
     StartCoroutine(ActivateWithDelay());
   }
 
   private void AppearAndActivate () {
-    MeshRenderer[] mrs = transform.GetComponentsInChildren<MeshRenderer>();
-    foreach (MeshRenderer mr in mrs) mr.enabled = true;
+    Renderer[] mrs = transform.GetComponentsInChildren<Renderer>();
+    foreach (Renderer mr in mrs) mr.enabled = true;
     if (rotate) StartCoroutine(Rotate());
     if (scale) StartCoroutine(Scale());
     if (bounce) StartCoroutine(Bounce());

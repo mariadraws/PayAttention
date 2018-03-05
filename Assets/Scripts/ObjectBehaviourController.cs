@@ -25,15 +25,21 @@ public class ObjectBehaviourController : MonoBehaviour {
   public float scaleSpeed = 1f;
 
   [Space]
+  [Header("*** Bounce overrides other moving ***")]
   public bool bounce = false;
   public float bounceMagnitude = 1f;
   public float bounceSpeed = 1f;
 
   [Space]
-  [Header("*** Bounce overrides moving ***")]
   public bool moveTowardsPlayer = false;
-  public float moveSpeed = 1f;
+  public float moveSpeedTowards = 1f;
   public float minDistance = 0.5f;
+
+  [Space]
+  public bool moveAwayFromPlayer = false;
+  public float moveSpeedAway = 0.1f;
+  public float maxDistance = 500f;
+
   private float currentDistance;
   [Tooltip("Will show the current distance in Unity's log.")]
   public bool showDistanceInLog = false;
@@ -58,6 +64,7 @@ public class ObjectBehaviourController : MonoBehaviour {
     if (scale) StartCoroutine(Scale());
     if (bounce) StartCoroutine(Bounce());
     if (moveTowardsPlayer) StartCoroutine(MoveTowardsPlayer());
+    if (moveAwayFromPlayer) StartCoroutine(MoveAwayFromPlayer());
     if (playSound) AddAndPlaySource();
   }
 
@@ -116,7 +123,21 @@ public class ObjectBehaviourController : MonoBehaviour {
     while (currentDistance > minDistance) {
       currentDistance = Vector3.Distance(transform.position, mainCamera.position);
       if (showDistanceInLog) Debug.Log(gameObject.name + " || " + currentDistance);
-      transform.position = Vector3.MoveTowards(transform.position, mainCamera.position, moveSpeed * Time.deltaTime);
+      transform.Translate((mainCamera.position - transform.position) * Time.deltaTime * moveSpeedTowards, Space.World);
+      yield return null;
+    }
+  }
+
+  private IEnumerator MoveAwayFromPlayer () {
+    if (mainCamera == null) {
+      Debug.Log(gameObject.name + " doesn't have the Main Camera assigned. Maria has to assign a Main Camera to " + gameObject.name);
+      yield break;
+    }
+    currentDistance = Vector3.Distance(transform.position, mainCamera.position);
+    while (currentDistance < maxDistance) {
+      currentDistance = Vector3.Distance(transform.position, mainCamera.position);
+      if (showDistanceInLog) Debug.Log(gameObject.name + " || " + currentDistance);
+      transform.Translate((transform.position - mainCamera.position) * Time.deltaTime * moveSpeedAway, Space.World);
       yield return null;
     }
   }

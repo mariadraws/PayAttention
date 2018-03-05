@@ -115,7 +115,7 @@ public class ObjectBehaviourController : MonoBehaviour {
     currentDistance = Vector3.Distance(transform.position, mainCamera.position);
     while (currentDistance > minDistance) {
       currentDistance = Vector3.Distance(transform.position, mainCamera.position);
-      if (showDistanceInLog) Debug.Log(currentDistance);
+      if (showDistanceInLog) Debug.Log(gameObject.name + " || " + currentDistance);
       transform.position = Vector3.MoveTowards(transform.position, mainCamera.position, moveSpeed * Time.deltaTime);
       yield return null;
     }

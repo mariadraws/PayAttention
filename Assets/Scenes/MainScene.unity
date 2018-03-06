@@ -808,7 +808,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCameraName: FirstPersonCharacter
-  appearTimer: 56
+  appearTimer: 85.091
   rotate: 0
   rotateAxis: {x: 1, y: 0, z: 0}
   rotateSpeed: 10
@@ -826,8 +826,8 @@ MonoBehaviour:
   moveSpeedAway: 0.1
   maxDistance: 500
   showDistanceInLog: 0
-  playSound: 0
-  soundToPlay: {fileID: 0}
+  playSound: 1
+  soundToPlay: {fileID: 8300000, guid: 6380021c09e112b4d927c78e832d07bd, type: 3}
   volume: 1
   loop: 0
 --- !u!1 &206568495
@@ -929,7 +929,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCameraName: FirstPersonCharacter
-  appearTimer: 54
+  appearTimer: 82.588
   rotate: 1
   rotateAxis: {x: 1, y: 0, z: 0}
   rotateSpeed: 1
@@ -948,7 +948,7 @@ MonoBehaviour:
   maxDistance: 500
   showDistanceInLog: 0
   playSound: 1
-  soundToPlay: {fileID: 8300000, guid: 490da90a54a154f248f0942809db1c7c, type: 3}
+  soundToPlay: {fileID: 8300000, guid: 088a939885785ac4abec0d0a9ba99a4c, type: 3}
   volume: 1
   loop: 0
 --- !u!1001 &288401099
@@ -988,7 +988,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4952295275492440, guid: a012e871c8151e74f86fcde962781024, type: 2}
       propertyPath: m_RootOrder
-      value: 22
+      value: 21
       objectReference: {fileID: 0}
     - target: {fileID: 4952295275492440, guid: a012e871c8151e74f86fcde962781024, type: 2}
       propertyPath: m_LocalScale.x
@@ -1004,7 +1004,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1016399693154292, guid: a012e871c8151e74f86fcde962781024, type: 2}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 1016399693154292, guid: a012e871c8151e74f86fcde962781024, type: 2}
       propertyPath: m_Name
@@ -1030,7 +1030,7 @@ Prefab:
     - target: {fileID: 114862819467469116, guid: a012e871c8151e74f86fcde962781024,
         type: 2}
       propertyPath: delay
-      value: 50
+      value: 75
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a012e871c8151e74f86fcde962781024, type: 2}
@@ -1040,6 +1040,45 @@ Transform:
   m_PrefabParentObject: {fileID: 4952295275492440, guid: a012e871c8151e74f86fcde962781024,
     type: 2}
   m_PrefabInternal: {fileID: 288401099}
+--- !u!1 &296465380 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1016399693154292, guid: a012e871c8151e74f86fcde962781024,
+    type: 2}
+  m_PrefabInternal: {fileID: 1451655002}
+--- !u!114 &296465381
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 296465380}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a84ef68d125d0548b28a32032f44f73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCameraName: FirstPersonCharacter
+  appearTimer: 117.626
+  rotate: 0
+  rotateAxis: {x: 1, y: 0, z: 0}
+  rotateSpeed: 1
+  scale: 0
+  scaleStart: 1
+  scaleEnd: 2
+  scaleSpeed: 1
+  bounce: 0
+  bounceMagnitude: 1
+  bounceSpeed: 1
+  moveTowardsPlayer: 0
+  moveSpeedTowards: 1
+  minDistance: 0.5
+  moveAwayFromPlayer: 0
+  moveSpeedAway: 0.1
+  maxDistance: 500
+  showDistanceInLog: 0
+  playSound: 0
+  soundToPlay: {fileID: 8300000, guid: 26f0d535b32b3194eac31cd42da77fe1, type: 3}
+  volume: 1
+  loop: 0
 --- !u!1 &312215226
 GameObject:
   m_ObjectHideFlags: 0
@@ -1273,9 +1312,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCameraName: FirstPersonCharacter
-  appearTimer: 72
+  appearTimer: 110.118
   rotate: 0
-  rotateAxis: {x: 1, y: 1, z: 0}
+  rotateAxis: {x: 0, y: 1, z: 0}
   rotateSpeed: 7
   scale: 1
   scaleStart: 1
@@ -1291,8 +1330,8 @@ MonoBehaviour:
   moveSpeedAway: 0.1
   maxDistance: 500
   showDistanceInLog: 0
-  playSound: 0
-  soundToPlay: {fileID: 0}
+  playSound: 1
+  soundToPlay: {fileID: 8300000, guid: 5f26f4439ed88a84fb0fc96914755564, type: 3}
   volume: 1
   loop: 0
 --- !u!4 &351225075 stripped
@@ -1696,10 +1735,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCameraName: FirstPersonCharacter
-  appearTimer: 76
+  appearTimer: 120.128
   rotate: 1
   rotateAxis: {x: 0, y: 1, z: 0}
-  rotateSpeed: 4
+  rotateSpeed: 6
   scale: 0
   scaleStart: 1
   scaleEnd: 2
@@ -1714,8 +1753,8 @@ MonoBehaviour:
   moveSpeedAway: 0.1
   maxDistance: 500
   showDistanceInLog: 0
-  playSound: 0
-  soundToPlay: {fileID: 0}
+  playSound: 1
+  soundToPlay: {fileID: 8300000, guid: dd2cec40ec232724780e70b0e7895d4f, type: 3}
   volume: 1
   loop: 0
 --- !u!4 &397560395 stripped
@@ -1902,7 +1941,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCameraName: FirstPersonCharacter
-  appearTimer: 33
+  appearTimer: 45.048
   rotate: 0
   rotateAxis: {x: 1, y: 0, z: 0}
   rotateSpeed: 1
@@ -1920,8 +1959,8 @@ MonoBehaviour:
   moveSpeedAway: 0.1
   maxDistance: 500
   showDistanceInLog: 0
-  playSound: 0
-  soundToPlay: {fileID: 0}
+  playSound: 1
+  soundToPlay: {fileID: 8300000, guid: 88f906813be7e984fbcdfa35e0dcc361, type: 3}
   volume: 1
   loop: 0
 --- !u!1 &433657086
@@ -2072,7 +2111,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!95 &453097674
 Animator:
   serializedVersion: 3
@@ -2159,7 +2198,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCameraName: FirstPersonCharacter
-  appearTimer: 3
+  appearTimer: 72.577
   rotate: 1
   rotateAxis: {x: 1, y: 0, z: 0}
   rotateSpeed: 1
@@ -2177,8 +2216,8 @@ MonoBehaviour:
   moveSpeedAway: 0.1
   maxDistance: 500
   showDistanceInLog: 0
-  playSound: 0
-  soundToPlay: {fileID: 0}
+  playSound: 1
+  soundToPlay: {fileID: 8300000, guid: d72d683c2b22dde4d88bd991824d54f6, type: 3}
   volume: 1
   loop: 0
 --- !u!1 &457442704
@@ -2428,7 +2467,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCameraName: FirstPersonCharacter
-  appearTimer: 52
+  appearTimer: 70.075
   rotate: 0
   rotateAxis: {x: 1, y: 0, z: 0}
   rotateSpeed: 1
@@ -2446,8 +2485,8 @@ MonoBehaviour:
   moveSpeedAway: 0.1
   maxDistance: 500
   showDistanceInLog: 0
-  playSound: 0
-  soundToPlay: {fileID: 0}
+  playSound: 1
+  soundToPlay: {fileID: 8300000, guid: 024eabaf0f05e2f44bb0cd9380ddbd78, type: 3}
   volume: 1
   loop: 0
 --- !u!1001 &495411956
@@ -2612,7 +2651,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCameraName: FirstPersonCharacter
-  appearTimer: 54
+  appearTimer: 77.583
   rotate: 0
   rotateAxis: {x: 1, y: 0, z: 0}
   rotateSpeed: 50
@@ -2624,14 +2663,14 @@ MonoBehaviour:
   bounceMagnitude: 1
   bounceSpeed: 1
   moveTowardsPlayer: 1
-  moveSpeedTowards: 1
-  minDistance: 4
+  moveSpeedTowards: 0.05
+  minDistance: 20
   moveAwayFromPlayer: 0
   moveSpeedAway: 0.1
   maxDistance: 500
   showDistanceInLog: 1
-  playSound: 0
-  soundToPlay: {fileID: 0}
+  playSound: 1
+  soundToPlay: {fileID: 8300000, guid: 87cc4e51ea51de64fa50f43bf0dd1ce8, type: 3}
   volume: 1
   loop: 0
 --- !u!4 &519748447 stripped
@@ -2749,7 +2788,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4919998450154112, guid: e698655b668bb494789ed7220e6446fc, type: 2}
       propertyPath: m_RootOrder
-      value: 29
+      value: 30
       objectReference: {fileID: 0}
     - target: {fileID: 4919998450154112, guid: e698655b668bb494789ed7220e6446fc, type: 2}
       propertyPath: m_LocalScale.x
@@ -2788,7 +2827,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCameraName: FirstPersonCharacter
-  appearTimer: 66
+  appearTimer: 105.112
   rotate: 1
   rotateAxis: {x: 0, y: 1, z: 0}
   rotateSpeed: 6
@@ -2806,8 +2845,8 @@ MonoBehaviour:
   moveSpeedAway: 0.1
   maxDistance: 500
   showDistanceInLog: 0
-  playSound: 0
-  soundToPlay: {fileID: 0}
+  playSound: 1
+  soundToPlay: {fileID: 8300000, guid: 0f0180f0fd9925945875f2ffe2c8603a, type: 3}
   volume: 1
   loop: 0
 --- !u!1001 &538677136
@@ -2847,7 +2886,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4744936570643366, guid: 6ba2a8597838f5f42a9d434006d50b9e, type: 2}
       propertyPath: m_RootOrder
-      value: 28
+      value: 29
       objectReference: {fileID: 0}
     - target: {fileID: 1886864024232210, guid: 6ba2a8597838f5f42a9d434006d50b9e, type: 2}
       propertyPath: m_Name
@@ -2889,7 +2928,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCameraName: FirstPersonCharacter
-  appearTimer: 64
+  appearTimer: 102.61
   rotate: 1
   rotateAxis: {x: 0, y: 1, z: 0}
   rotateSpeed: 8
@@ -2907,8 +2946,8 @@ MonoBehaviour:
   moveSpeedAway: 0.1
   maxDistance: 500
   showDistanceInLog: 0
-  playSound: 0
-  soundToPlay: {fileID: 0}
+  playSound: 1
+  soundToPlay: {fileID: 8300000, guid: c5f73fcb41277d54293d2d9dd69c020c, type: 3}
   volume: 1
   loop: 0
 --- !u!1001 &563894740
@@ -3745,7 +3784,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCameraName: FirstPersonCharacter
-  appearTimer: 26
+  appearTimer: 35.037
   rotate: 1
   rotateAxis: {x: 1, y: 0, z: 0}
   rotateSpeed: 1
@@ -3763,8 +3802,8 @@ MonoBehaviour:
   moveSpeedAway: 0.1
   maxDistance: 500
   showDistanceInLog: 0
-  playSound: 0
-  soundToPlay: {fileID: 0}
+  playSound: 1
+  soundToPlay: {fileID: 8300000, guid: 44b0cf3e201d9894c859d1a3bd82bb99, type: 3}
   volume: 1
   loop: 0
 --- !u!1 &732130886
@@ -3961,34 +4000,6 @@ MonoBehaviour:
   soundToPlay: {fileID: 8300000, guid: 8ed9dd7f0de3267488904930cb3b17dd, type: 3}
   volume: 100
   loop: 0
---- !u!1 &736535472
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 736535473}
-  m_Layer: 0
-  m_Name: The End is near
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &736535473
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 736535472}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -31.52, y: 11.53, z: -17.96}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1421362289}
-  m_RootOrder: 35
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &740613276
 Prefab:
   m_ObjectHideFlags: 0
@@ -4026,7 +4037,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4922393585333140, guid: abe376344b072434d9b995af3fea74e1, type: 2}
       propertyPath: m_RootOrder
-      value: 30
+      value: 28
       objectReference: {fileID: 0}
     - target: {fileID: 4922393585333140, guid: abe376344b072434d9b995af3fea74e1, type: 2}
       propertyPath: m_LocalScale.x
@@ -4060,7 +4071,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCameraName: FirstPersonCharacter
-  appearTimer: 68
+  appearTimer: 97.604
   rotate: 0
   rotateAxis: {x: 1, y: 0, z: 0}
   rotateSpeed: 1
@@ -4074,12 +4085,12 @@ MonoBehaviour:
   moveTowardsPlayer: 0
   moveSpeedTowards: 1
   minDistance: 0.5
-  moveAwayFromPlayer: 0
-  moveSpeedAway: 0.1
-  maxDistance: 500
+  moveAwayFromPlayer: 1
+  moveSpeedAway: 0.5
+  maxDistance: 200
   showDistanceInLog: 0
-  playSound: 0
-  soundToPlay: {fileID: 0}
+  playSound: 1
+  soundToPlay: {fileID: 8300000, guid: b36ef66b89203c34da6b970fcedcf338, type: 3}
   volume: 1
   loop: 0
 --- !u!1 &743278300
@@ -4181,8 +4192,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCameraName: FirstPersonCharacter
-  appearTimer: 39
-  rotate: 0
+  appearTimer: 57.561
+  rotate: 1
   rotateAxis: {x: 1, y: 0, z: 0}
   rotateSpeed: 1
   scale: 0
@@ -4199,8 +4210,8 @@ MonoBehaviour:
   moveSpeedAway: 0.1
   maxDistance: 500
   showDistanceInLog: 0
-  playSound: 0
-  soundToPlay: {fileID: 0}
+  playSound: 1
+  soundToPlay: {fileID: 8300000, guid: a01bca41b386a9b45b71a93fcc1a84a8, type: 3}
   volume: 1
   loop: 0
 --- !u!1 &752315663
@@ -4302,7 +4313,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCameraName: FirstPersonCharacter
-  appearTimer: 20
+  appearTimer: 30.032
   rotate: 0
   rotateAxis: {x: 1, y: 0, z: 0}
   rotateSpeed: 1
@@ -4321,7 +4332,7 @@ MonoBehaviour:
   maxDistance: 500
   showDistanceInLog: 1
   playSound: 1
-  soundToPlay: {fileID: 8300000, guid: 490da90a54a154f248f0942809db1c7c, type: 3}
+  soundToPlay: {fileID: 8300000, guid: b5a3e503dad764149b47c01bc6c942db, type: 3}
   volume: 1
   loop: 0
 --- !u!1 &752596048
@@ -4547,7 +4558,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCameraName: FirstPersonCharacter
-  appearTimer: 70
+  appearTimer: 107.615
   rotate: 0
   rotateAxis: {x: 1, y: 0, z: 0}
   rotateSpeed: 1
@@ -4557,7 +4568,7 @@ MonoBehaviour:
   scaleSpeed: 1
   bounce: 1
   bounceMagnitude: 1
-  bounceSpeed: 4
+  bounceSpeed: 3
   moveTowardsPlayer: 0
   moveSpeedTowards: 1
   minDistance: 0.5
@@ -4565,8 +4576,8 @@ MonoBehaviour:
   moveSpeedAway: 0.1
   maxDistance: 500
   showDistanceInLog: 0
-  playSound: 0
-  soundToPlay: {fileID: 0}
+  playSound: 1
+  soundToPlay: {fileID: 8300000, guid: 202d671f6c66f174b86ad4401ff97319, type: 3}
   volume: 1
   loop: 0
 --- !u!1 &820363435
@@ -4668,7 +4679,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCameraName: FirstPersonCharacter
-  appearTimer: 62
+  appearTimer: 95.102
   rotate: 0
   rotateAxis: {x: 1, y: 0, z: 0}
   rotateSpeed: 1
@@ -4686,8 +4697,8 @@ MonoBehaviour:
   moveSpeedAway: 0.1
   maxDistance: 500
   showDistanceInLog: 0
-  playSound: 0
-  soundToPlay: {fileID: 0}
+  playSound: 1
+  soundToPlay: {fileID: 8300000, guid: 7d3447f5ee5e0504380a9aa806652bf0, type: 3}
   volume: 1
   loop: 0
 --- !u!1 &831051884
@@ -4920,15 +4931,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4736523372318328, guid: 2ac9d33a13cd994468b9ee47c267c52a, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -34.2
+      value: -39.5
       objectReference: {fileID: 0}
     - target: {fileID: 4736523372318328, guid: 2ac9d33a13cd994468b9ee47c267c52a, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -3.0700002
+      value: -2.6
       objectReference: {fileID: 0}
     - target: {fileID: 4736523372318328, guid: 2ac9d33a13cd994468b9ee47c267c52a, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -47.8
+      value: -57.3
       objectReference: {fileID: 0}
     - target: {fileID: 4736523372318328, guid: 2ac9d33a13cd994468b9ee47c267c52a, type: 2}
       propertyPath: m_LocalRotation.x
@@ -5055,7 +5066,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCameraName: FirstPersonCharacter
-  appearTimer: 60
+  appearTimer: 90.096
   rotate: 0
   rotateAxis: {x: 1, y: 0, z: 0}
   rotateSpeed: 1
@@ -5063,18 +5074,18 @@ MonoBehaviour:
   scaleStart: 1
   scaleEnd: 20
   scaleSpeed: 1
-  bounce: 1
+  bounce: 0
   bounceMagnitude: 1
   bounceSpeed: 1
   moveTowardsPlayer: 1
-  moveSpeedTowards: 1
+  moveSpeedTowards: 0.02
   minDistance: 30
   moveAwayFromPlayer: 0
   moveSpeedAway: 0.1
   maxDistance: 500
   showDistanceInLog: 0
   playSound: 1
-  soundToPlay: {fileID: 0}
+  soundToPlay: {fileID: 8300000, guid: e50e65f7d87a81c4f95df7f6a3d548b5, type: 3}
   volume: 1
   loop: 0
 --- !u!1 &918802677
@@ -5223,6 +5234,143 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 920013036}
   m_Mesh: {fileID: 4300070, guid: 202bb71fe6413ba4593d0ff87393a609, type: 3}
+--- !u!1 &962067530
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 962067531}
+  - component: {fileID: 962067534}
+  - component: {fileID: 962067533}
+  - component: {fileID: 962067532}
+  - component: {fileID: 962067536}
+  - component: {fileID: 962067535}
+  m_Layer: 0
+  m_Name: The End is Near
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &962067531
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 962067530}
+  m_LocalRotation: {x: -0.11733027, y: -0.8813712, z: -0.29711148, w: 0.34805635}
+  m_LocalPosition: {x: -38.9, y: 16.4, z: -25.8}
+  m_LocalScale: {x: 18.19897, y: 18.198961, z: 18.198969}
+  m_Children: []
+  m_Father: {fileID: 1421362289}
+  m_RootOrder: 35
+  m_LocalEulerAnglesHint: {x: -37.258003, y: -136.90201, z: 0}
+--- !u!23 &962067532
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 962067530}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_Materials:
+  - {fileID: 2100000, guid: 2382f95bb77ca054d81d4902858ab066, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+--- !u!64 &962067533
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 962067530}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Convex: 0
+  m_CookingOptions: 14
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!33 &962067534
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 962067530}
+  m_Mesh: {fileID: 10210, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &962067535
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 962067530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 24cbc9353632588449a6e1ebba69a04e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startColor: {r: 0, g: 0, b: 0, a: 0}
+  endColor: {r: 0, g: 0, b: 0, a: 0}
+  delay: 115
+  speed: 1
+--- !u!114 &962067536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 962067530}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a84ef68d125d0548b28a32032f44f73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCameraName: FirstPersonCharacter
+  appearTimer: 117.626
+  rotate: 0
+  rotateAxis: {x: 1, y: 0, z: 0}
+  rotateSpeed: 1
+  scale: 0
+  scaleStart: 1
+  scaleEnd: 2
+  scaleSpeed: 1
+  bounce: 0
+  bounceMagnitude: 1
+  bounceSpeed: 1
+  moveTowardsPlayer: 0
+  moveSpeedTowards: 1
+  minDistance: 0.5
+  moveAwayFromPlayer: 0
+  moveSpeedAway: 0.1
+  maxDistance: 500
+  showDistanceInLog: 0
+  playSound: 1
+  soundToPlay: {fileID: 8300000, guid: 26f0d535b32b3194eac31cd42da77fe1, type: 3}
+  volume: 1
+  loop: 0
 --- !u!1 &974862351 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1851989614968426, guid: 53041e4c4ce906a429b42984387e91b4,
@@ -5240,7 +5388,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCameraName: FirstPersonCharacter
-  appearTimer: 36
+  appearTimer: 55.059
   rotate: 1
   rotateAxis: {x: 1, y: 1, z: 0}
   rotateSpeed: 4
@@ -5258,8 +5406,8 @@ MonoBehaviour:
   moveSpeedAway: 0.1
   maxDistance: 500
   showDistanceInLog: 0
-  playSound: 0
-  soundToPlay: {fileID: 0}
+  playSound: 1
+  soundToPlay: {fileID: 8300000, guid: 400f5de4fbcc58c44b79397789719c99, type: 3}
   volume: 1
   loop: 0
 --- !u!1001 &980598179
@@ -5271,15 +5419,15 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4684460268523796, guid: e14d3f0010687a64f8e93129f2202ac3, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -5.1500015
+      value: -5.15
       objectReference: {fileID: 0}
     - target: {fileID: 4684460268523796, guid: e14d3f0010687a64f8e93129f2202ac3, type: 2}
       propertyPath: m_LocalPosition.y
-      value: 6.0499997
+      value: 12.58
       objectReference: {fileID: 0}
     - target: {fileID: 4684460268523796, guid: e14d3f0010687a64f8e93129f2202ac3, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -5.509811
+      value: -5.51
       objectReference: {fileID: 0}
     - target: {fileID: 4684460268523796, guid: e14d3f0010687a64f8e93129f2202ac3, type: 2}
       propertyPath: m_LocalRotation.x
@@ -5337,9 +5485,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCameraName: FirstPersonCharacter
-  appearTimer: 74
+  appearTimer: 115.123
   rotate: 1
-  rotateAxis: {x: 1, y: 1, z: 0}
+  rotateAxis: {x: 0, y: 1, z: 0}
   rotateSpeed: 6
   scale: 0
   scaleStart: 1
@@ -5355,8 +5503,8 @@ MonoBehaviour:
   moveSpeedAway: 0.1
   maxDistance: 500
   showDistanceInLog: 0
-  playSound: 0
-  soundToPlay: {fileID: 0}
+  playSound: 1
+  soundToPlay: {fileID: 8300000, guid: 11da56d719856d54ebfdaa00508230d3, type: 3}
   volume: 1
   loop: 0
 --- !u!4 &985145339 stripped
@@ -5926,7 +6074,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCameraName: FirstPersonCharacter
-  appearTimer: 80
+  appearTimer: 122.631
   rotate: 1
   rotateAxis: {x: 1, y: 0, z: 0}
   rotateSpeed: 1
@@ -5960,7 +6108,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCameraName: FirstPersonCharacter
-  appearTimer: 80
+  appearTimer: 122.631
   rotate: 0
   rotateAxis: {x: 1, y: 0, z: 0}
   rotateSpeed: 1
@@ -5978,8 +6126,8 @@ MonoBehaviour:
   moveSpeedAway: 0.1
   maxDistance: 500
   showDistanceInLog: 0
-  playSound: 0
-  soundToPlay: {fileID: 0}
+  playSound: 1
+  soundToPlay: {fileID: 8300000, guid: 3505169b6fc59f24cb0293e2865ac5af, type: 3}
   volume: 1
   loop: 0
 --- !u!114 &1126093598
@@ -5994,7 +6142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCameraName: FirstPersonCharacter
-  appearTimer: 82
+  appearTimer: 122.631
   rotate: 0
   rotateAxis: {x: 1, y: 0, z: 0}
   rotateSpeed: 1
@@ -6003,8 +6151,8 @@ MonoBehaviour:
   scaleEnd: 2
   scaleSpeed: 1
   bounce: 1
-  bounceMagnitude: 2
-  bounceSpeed: 1
+  bounceMagnitude: 0.5
+  bounceSpeed: 0.5
   moveTowardsPlayer: 0
   moveSpeedTowards: 1
   minDistance: 0.5
@@ -6223,7 +6371,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCameraName: FirstPersonCharacter
-  appearTimer: 58
+  appearTimer: 87.594
   rotate: 0
   rotateAxis: {x: 1, y: 0, z: 0}
   rotateSpeed: 1
@@ -6241,8 +6389,8 @@ MonoBehaviour:
   moveSpeedAway: 0.1
   maxDistance: 500
   showDistanceInLog: 0
-  playSound: 0
-  soundToPlay: {fileID: 0}
+  playSound: 1
+  soundToPlay: {fileID: 8300000, guid: f9677a7a700222a46852ed69fae36d27, type: 3}
   volume: 1
   loop: 0
 --- !u!1 &1214027801 stripped
@@ -6631,7 +6779,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCameraName: FirstPersonCharacter
-  appearTimer: 23
+  appearTimer: 32.534
   rotate: 1
   rotateAxis: {x: 0, y: 1, z: 0}
   rotateSpeed: 10
@@ -6650,7 +6798,7 @@ MonoBehaviour:
   maxDistance: 500
   showDistanceInLog: 0
   playSound: 1
-  soundToPlay: {fileID: 0}
+  soundToPlay: {fileID: 8300000, guid: d8c516a7273dfec4f8645ca03aec2684, type: 3}
   volume: 1
   loop: 0
 --- !u!4 &1314348983 stripped
@@ -6669,13 +6817,14 @@ GameObject:
   - component: {fileID: 1323230670}
   - component: {fileID: 1323230672}
   - component: {fileID: 1323230671}
+  - component: {fileID: 1323230673}
   m_Layer: 0
   m_Name: DNA
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1323230670
 Transform:
   m_ObjectHideFlags: 0
@@ -6705,7 +6854,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: c2dc79c2426374449a1d42b2f495578b, type: 2}
+  - {fileID: 2100000, guid: e143fbf1f63cb7d4ab6f88cc65468553, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -6733,6 +6882,40 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1323230669}
   m_Mesh: {fileID: 4300000, guid: b39619033a40d6a49a77df12dad13ca7, type: 3}
+--- !u!114 &1323230673
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1323230669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a84ef68d125d0548b28a32032f44f73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCameraName: FirstPersonCharacter
+  appearTimer: 125.134
+  rotate: 0
+  rotateAxis: {x: 0, y: 1, z: 0}
+  rotateSpeed: 8
+  scale: 0
+  scaleStart: 1
+  scaleEnd: 2
+  scaleSpeed: 1
+  bounce: 0
+  bounceMagnitude: 1
+  bounceSpeed: 1
+  moveTowardsPlayer: 0
+  moveSpeedTowards: 1
+  minDistance: 0.5
+  moveAwayFromPlayer: 0
+  moveSpeedAway: 0.1
+  maxDistance: 500
+  showDistanceInLog: 0
+  playSound: 1
+  soundToPlay: {fileID: 8300000, guid: d7dabf74fa8b8dc44bc9f6dc4c04d756, type: 3}
+  volume: 1
+  loop: 0
 --- !u!1001 &1343559621
 Prefab:
   m_ObjectHideFlags: 0
@@ -6872,6 +7055,7 @@ GameObject:
   - component: {fileID: 1343921369}
   - component: {fileID: 1343921368}
   - component: {fileID: 1343921367}
+  - component: {fileID: 1343921371}
   m_Layer: 0
   m_Name: nike sign in sky
   m_TagString: Untagged
@@ -6940,13 +7124,48 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1343921366}
-  m_LocalRotation: {x: -0.14248466, y: 0.75408673, z: 0.12560402, w: 0.62870896}
-  m_LocalPosition: {x: -10.07, y: 10.02, z: -21.88}
-  m_LocalScale: {x: 5.642976, y: 5.642967, z: 5.642978}
-  m_Children: []
+  m_LocalRotation: {x: -0.20232166, y: 0.8256323, z: 0.15502451, w: 0.5033535}
+  m_LocalPosition: {x: -1.4, y: 18.05, z: -20.29}
+  m_LocalScale: {x: 13.184138, y: 13.184124, z: 13.18415}
+  m_Children:
+  - {fileID: 2142163775}
   m_Father: {fileID: 1421362289}
   m_RootOrder: 40
-  m_LocalEulerAnglesHint: {x: -21.629002, y: 101.033005, z: -3.5130002}
+  m_LocalEulerAnglesHint: {x: -27.366001, y: 120.086006, z: -11.564}
+--- !u!114 &1343921371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1343921366}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a84ef68d125d0548b28a32032f44f73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCameraName: FirstPersonCharacter
+  appearTimer: 130.139
+  rotate: 0
+  rotateAxis: {x: 1, y: 0, z: 0}
+  rotateSpeed: 1
+  scale: 0
+  scaleStart: 1
+  scaleEnd: 2
+  scaleSpeed: 1
+  bounce: 0
+  bounceMagnitude: 1
+  bounceSpeed: 1
+  moveTowardsPlayer: 0
+  moveSpeedTowards: 1
+  minDistance: 0.5
+  moveAwayFromPlayer: 0
+  moveSpeedAway: 0.1
+  maxDistance: 500
+  showDistanceInLog: 0
+  playSound: 1
+  soundToPlay: {fileID: 8300000, guid: 0dbabace53da47342a0f63cf9eb1f26e, type: 3}
+  volume: 1
+  loop: 0
 --- !u!1001 &1348893573
 Prefab:
   m_ObjectHideFlags: 0
@@ -7059,21 +7278,21 @@ Transform:
   - {fileID: 481364395}
   - {fileID: 453097676}
   - {fileID: 517359781}
-  - {fileID: 1488556728}
   - {fileID: 288401100}
+  - {fileID: 1488556728}
   - {fileID: 206568496}
   - {fileID: 2132027240}
   - {fileID: 36533939}
   - {fileID: 910716097}
   - {fileID: 820363439}
+  - {fileID: 1032985049}
   - {fileID: 2129751043}
   - {fileID: 195682060}
-  - {fileID: 1032985049}
   - {fileID: 101395375}
   - {fileID: 345788692}
   - {fileID: 1432306725}
   - {fileID: 1559643989}
-  - {fileID: 736535473}
+  - {fileID: 962067531}
   - {fileID: 1185849718}
   - {fileID: 1832364772}
   - {fileID: 1323230670}
@@ -7228,12 +7447,12 @@ Prefab:
     - target: {fileID: 114862819467469116, guid: a012e871c8151e74f86fcde962781024,
         type: 2}
       propertyPath: delay
-      value: 30
+      value: 115
       objectReference: {fileID: 0}
     - target: {fileID: 114862819467469116, guid: a012e871c8151e74f86fcde962781024,
         type: 2}
       propertyPath: speed
-      value: 0.05
+      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a012e871c8151e74f86fcde962781024, type: 2}
@@ -7255,7 +7474,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCameraName: FirstPersonCharacter
-  appearTimer: 44
+  appearTimer: 62.567
   rotate: 1
   rotateAxis: {x: 1, y: 1, z: 0}
   rotateSpeed: 10
@@ -7273,8 +7492,8 @@ MonoBehaviour:
   moveSpeedAway: 0.1
   maxDistance: 500
   showDistanceInLog: 0
-  playSound: 0
-  soundToPlay: {fileID: 0}
+  playSound: 1
+  soundToPlay: {fileID: 8300000, guid: 01ee5a0eee772604e8fde1438f642cc6, type: 3}
   volume: 1
   loop: 0
 --- !u!1 &1473933529 stripped
@@ -7294,7 +7513,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCameraName: FirstPersonCharacter
-  appearTimer: 48
+  appearTimer: 65.069
   rotate: 1
   rotateAxis: {x: 0, y: 1, z: 0}
   rotateSpeed: 10
@@ -7312,8 +7531,8 @@ MonoBehaviour:
   moveSpeedAway: 0.1
   maxDistance: 500
   showDistanceInLog: 0
-  playSound: 0
-  soundToPlay: {fileID: 0}
+  playSound: 1
+  soundToPlay: {fileID: 8300000, guid: f993cce2e4aa8bb4e990eb2942478918, type: 3}
   volume: 1
   loop: 0
 --- !u!1 &1488556727
@@ -7389,7 +7608,7 @@ Transform:
   - {fileID: 834613842}
   - {fileID: 1739339669}
   m_Father: {fileID: 1421362289}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 31.884, y: -0.76900005, z: 2.7470002}
 --- !u!114 &1488556729
 MonoBehaviour:
@@ -7403,7 +7622,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCameraName: FirstPersonCharacter
-  appearTimer: 52
+  appearTimer: 80.085
   rotate: 1
   rotateAxis: {x: 1, y: 0, z: 0}
   rotateSpeed: 1
@@ -7421,8 +7640,8 @@ MonoBehaviour:
   moveSpeedAway: 0.1
   maxDistance: 500
   showDistanceInLog: 0
-  playSound: 0
-  soundToPlay: {fileID: 0}
+  playSound: 1
+  soundToPlay: {fileID: 8300000, guid: 76b8a5bfefc9dce4ea1980eaed3cc2d0, type: 3}
   volume: 1
   loop: 0
 --- !u!4 &1495863310 stripped
@@ -7785,7 +8004,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCameraName: FirstPersonCharacter
-  appearTimer: 33
+  appearTimer: 45.048
   rotate: 0
   rotateAxis: {x: 1, y: 0, z: 0}
   rotateSpeed: 1
@@ -7870,6 +8089,10 @@ Prefab:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1063041653323438, guid: a73b005b5a7527142b306920a7ea95df, type: 2}
+      propertyPath: m_Name
+      value: inflatable_pool_toy2-30
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: a73b005b5a7527142b306920a7ea95df, type: 2}
   m_IsPrefabParent: 0
@@ -7890,7 +8113,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCameraName: FirstPersonCharacter
-  appearTimer: 72
+  appearTimer: 112.62
   rotate: 0
   rotateAxis: {x: 1, y: 0, z: 0}
   rotateSpeed: 1
@@ -7908,8 +8131,8 @@ MonoBehaviour:
   moveSpeedAway: 0.1
   maxDistance: 500
   showDistanceInLog: 0
-  playSound: 0
-  soundToPlay: {fileID: 0}
+  playSound: 1
+  soundToPlay: {fileID: 8300000, guid: b608c038f2af2cc4aadce1fe447ebea8, type: 3}
   volume: 1
   loop: 0
 --- !u!1 &1592019369
@@ -8360,8 +8583,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCameraName: FirstPersonCharacter
-  appearTimer: 42
-  rotate: 0
+  appearTimer: 60.064
+  rotate: 1
   rotateAxis: {x: 1, y: 0, z: 0}
   rotateSpeed: 1
   scale: 0
@@ -8378,8 +8601,8 @@ MonoBehaviour:
   moveSpeedAway: 0.1
   maxDistance: 500
   showDistanceInLog: 0
-  playSound: 0
-  soundToPlay: {fileID: 0}
+  playSound: 1
+  soundToPlay: {fileID: 8300000, guid: 7a04640033ca2cb40b0cb44bc2b75fec, type: 3}
   volume: 1
   loop: 0
 --- !u!1001 &1650417617
@@ -9019,7 +9242,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCameraName: FirstPersonCharacter
-  appearTimer: 50
+  appearTimer: 67.572
   rotate: 0
   rotateAxis: {x: 1, y: 0, z: 0}
   rotateSpeed: 1
@@ -9031,14 +9254,14 @@ MonoBehaviour:
   bounceMagnitude: 1
   bounceSpeed: 1
   moveTowardsPlayer: 1
-  moveSpeedTowards: 1
+  moveSpeedTowards: 0.5
   minDistance: 20
   moveAwayFromPlayer: 0
   moveSpeedAway: 0.1
   maxDistance: 500
   showDistanceInLog: 0
-  playSound: 0
-  soundToPlay: {fileID: 0}
+  playSound: 1
+  soundToPlay: {fileID: 8300000, guid: d60a76f9423b954448283ab0df58ec61, type: 3}
   volume: 1
   loop: 0
 --- !u!1 &1811682889
@@ -9546,23 +9769,23 @@ MonoBehaviour:
   rotateAxis: {x: 1, y: 0, z: 0}
   rotateSpeed: 1
   scale: 1
-  scaleStart: 50
-  scaleEnd: 300
+  scaleStart: 40.042
+  scaleEnd: 150
   scaleSpeed: 10
   bounce: 0
   bounceMagnitude: 1
   bounceSpeed: 1
   moveTowardsPlayer: 1
-  moveSpeedTowards: 1
+  moveSpeedTowards: 0.5
   minDistance: 9
   moveAwayFromPlayer: 0
   moveSpeedAway: 0.1
   maxDistance: 500
   showDistanceInLog: 1
   playSound: 1
-  soundToPlay: {fileID: 8300000, guid: 5897aeed9b676024fbb8c694b421a861, type: 3}
+  soundToPlay: {fileID: 8300000, guid: e6c1880f1d908f2428a9ef0832c09f58, type: 3}
   volume: 1
-  loop: 0
+  loop: 1
 --- !u!1001 &1942596155
 Prefab:
   m_ObjectHideFlags: 0
@@ -10167,3 +10390,68 @@ Transform:
   m_PrefabParentObject: {fileID: 4430002744226520, guid: 2eff1d5d491139e4e9606c592ae5fdfc,
     type: 2}
   m_PrefabInternal: {fileID: 2132027239}
+--- !u!1 &2142163774
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 2142163775}
+  - component: {fileID: 2142163776}
+  m_Layer: 0
+  m_Name: Spotlight
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &2142163775
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2142163774}
+  m_LocalRotation: {x: 0.26950788, y: -0.35325834, z: 0.80281717, w: 0.39756596}
+  m_LocalPosition: {x: -0.05423629, y: 1.078286, z: -1.0439078}
+  m_LocalScale: {x: 0.0758487, y: 0.075848736, z: 0.16526099}
+  m_Children: []
+  m_Father: {fileID: 1343921370}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 154.607, y: -60.414, z: -64.24399}
+--- !u!108 &2142163776
+Light:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2142163774}
+  m_Enabled: 1
+  serializedVersion: 8
+  m_Type: 0
+  m_Color: {r: 1, g: 1, b: 0.92436206, a: 1}
+  m_Intensity: 0.5
+  m_Range: 20
+  m_SpotAngle: 28
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 0
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_Lightmapping: 4
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0

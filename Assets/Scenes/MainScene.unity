@@ -7023,6 +7023,10 @@ Prefab:
       propertyPath: rolloffMode
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 2000000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
+      propertyPath: m_AllowMSAA
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
   m_IsPrefabParent: 0
@@ -7044,6 +7048,21 @@ MonoBehaviour:
   fadeTime: 2
   fadeColor: {r: 1, g: 1, b: 1, a: 1}
   fadeOnStart: 1
+--- !u!114 &1343559625
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1343559622}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb3e4b89f6007e049a897e70059bd35a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  startColor: {r: 0.9338235, g: 0.9338235, b: 0.9338235, a: 0}
+  endColor: {r: 0.24313726, g: 0.24705882, b: 0.7372549, a: 0.019607844}
+  delay: 60
+  speed: 0.1
 --- !u!1 &1343921366
 GameObject:
   m_ObjectHideFlags: 0

@@ -539,8 +539,11 @@ MonoBehaviour:
   bounceMagnitude: 1
   bounceSpeed: 1
   moveTowardsPlayer: 0
-  moveSpeed: 1
+  moveSpeedTowards: 1
   minDistance: 0.5
+  moveAwayFromPlayer: 0
+  moveSpeedAway: 0.1
+  maxDistance: 500
   showDistanceInLog: 0
   playSound: 1
   soundToPlay: {fileID: 0}
@@ -817,8 +820,11 @@ MonoBehaviour:
   bounceMagnitude: 1
   bounceSpeed: 1
   moveTowardsPlayer: 0
-  moveSpeed: 1
+  moveSpeedTowards: 1
   minDistance: 0.5
+  moveAwayFromPlayer: 0
+  moveSpeedAway: 0.1
+  maxDistance: 500
   showDistanceInLog: 0
   playSound: 0
   soundToPlay: {fileID: 0}
@@ -935,8 +941,11 @@ MonoBehaviour:
   bounceMagnitude: 1
   bounceSpeed: 1
   moveTowardsPlayer: 0
-  moveSpeed: 1
+  moveSpeedTowards: 1
   minDistance: 0.5
+  moveAwayFromPlayer: 0
+  moveSpeedAway: 0.1
+  maxDistance: 500
   showDistanceInLog: 0
   playSound: 1
   soundToPlay: {fileID: 8300000, guid: 490da90a54a154f248f0942809db1c7c, type: 3}
@@ -1248,6 +1257,44 @@ Prefab:
 Transform:
   m_PrefabParentObject: {fileID: 423462, guid: 0cb6fa7db9072384298dd626a4ad1a4d, type: 2}
   m_PrefabInternal: {fileID: 345788691}
+--- !u!1 &345788693 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 165726, guid: 0cb6fa7db9072384298dd626a4ad1a4d, type: 2}
+  m_PrefabInternal: {fileID: 345788691}
+--- !u!114 &345788694
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 345788693}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6a84ef68d125d0548b28a32032f44f73, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainCameraName: FirstPersonCharacter
+  appearTimer: 72
+  rotate: 0
+  rotateAxis: {x: 1, y: 1, z: 0}
+  rotateSpeed: 7
+  scale: 1
+  scaleStart: 1
+  scaleEnd: 2
+  scaleSpeed: 1
+  bounce: 0
+  bounceMagnitude: 1
+  bounceSpeed: 1
+  moveTowardsPlayer: 0
+  moveSpeedTowards: 1
+  minDistance: 0.5
+  moveAwayFromPlayer: 0
+  moveSpeedAway: 0.1
+  maxDistance: 500
+  showDistanceInLog: 0
+  playSound: 0
+  soundToPlay: {fileID: 0}
+  volume: 1
+  loop: 0
 --- !u!4 &351225075 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4540077733695044, guid: 53041e4c4ce906a429b42984387e91b4,
@@ -1661,8 +1708,11 @@ MonoBehaviour:
   bounceMagnitude: 1
   bounceSpeed: 1
   moveTowardsPlayer: 0
-  moveSpeed: 1
+  moveSpeedTowards: 1
   minDistance: 0.5
+  moveAwayFromPlayer: 0
+  moveSpeedAway: 0.1
+  maxDistance: 500
   showDistanceInLog: 0
   playSound: 0
   soundToPlay: {fileID: 0}
@@ -1753,8 +1803,11 @@ MonoBehaviour:
   bounceMagnitude: 1
   bounceSpeed: 1
   moveTowardsPlayer: 0
-  moveSpeed: 1
+  moveSpeedTowards: 1
   minDistance: 0.5
+  moveAwayFromPlayer: 0
+  moveSpeedAway: 0.1
+  maxDistance: 500
   showDistanceInLog: 0
   playSound: 0
   soundToPlay: {fileID: 0}
@@ -1861,8 +1914,11 @@ MonoBehaviour:
   bounceMagnitude: 1
   bounceSpeed: 1
   moveTowardsPlayer: 0
-  moveSpeed: 1
+  moveSpeedTowards: 1
   minDistance: 0.5
+  moveAwayFromPlayer: 0
+  moveSpeedAway: 0.1
+  maxDistance: 500
   showDistanceInLog: 0
   playSound: 0
   soundToPlay: {fileID: 0}
@@ -2016,7 +2072,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!95 &453097674
 Animator:
   serializedVersion: 3
@@ -2115,8 +2171,11 @@ MonoBehaviour:
   bounceMagnitude: 1
   bounceSpeed: 1
   moveTowardsPlayer: 0
-  moveSpeed: 1
+  moveSpeedTowards: 1
   minDistance: 0.5
+  moveAwayFromPlayer: 0
+  moveSpeedAway: 0.1
+  maxDistance: 500
   showDistanceInLog: 0
   playSound: 0
   soundToPlay: {fileID: 0}
@@ -2381,8 +2440,11 @@ MonoBehaviour:
   bounceMagnitude: 1
   bounceSpeed: 1
   moveTowardsPlayer: 0
-  moveSpeed: 1
+  moveSpeedTowards: 1
   minDistance: 0.5
+  moveAwayFromPlayer: 0
+  moveSpeedAway: 0.1
+  maxDistance: 500
   showDistanceInLog: 0
   playSound: 0
   soundToPlay: {fileID: 0}
@@ -2562,8 +2624,11 @@ MonoBehaviour:
   bounceMagnitude: 1
   bounceSpeed: 1
   moveTowardsPlayer: 1
-  moveSpeed: 0.000001
+  moveSpeedTowards: 1
   minDistance: 4
+  moveAwayFromPlayer: 0
+  moveSpeedAway: 0.1
+  maxDistance: 500
   showDistanceInLog: 1
   playSound: 0
   soundToPlay: {fileID: 0}
@@ -2735,8 +2800,11 @@ MonoBehaviour:
   bounceMagnitude: 1
   bounceSpeed: 1
   moveTowardsPlayer: 0
-  moveSpeed: 1
+  moveSpeedTowards: 1
   minDistance: 0.5
+  moveAwayFromPlayer: 0
+  moveSpeedAway: 0.1
+  maxDistance: 500
   showDistanceInLog: 0
   playSound: 0
   soundToPlay: {fileID: 0}
@@ -2833,8 +2901,11 @@ MonoBehaviour:
   bounceMagnitude: 1
   bounceSpeed: 1
   moveTowardsPlayer: 0
-  moveSpeed: 1
+  moveSpeedTowards: 1
   minDistance: 0.5
+  moveAwayFromPlayer: 0
+  moveSpeedAway: 0.1
+  maxDistance: 500
   showDistanceInLog: 0
   playSound: 0
   soundToPlay: {fileID: 0}
@@ -3686,8 +3757,11 @@ MonoBehaviour:
   bounceMagnitude: 1
   bounceSpeed: 1
   moveTowardsPlayer: 0
-  moveSpeed: 1
+  moveSpeedTowards: 1
   minDistance: 0.5
+  moveAwayFromPlayer: 0
+  moveSpeedAway: 0.1
+  maxDistance: 500
   showDistanceInLog: 0
   playSound: 0
   soundToPlay: {fileID: 0}
@@ -3865,7 +3939,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCameraName: FirstPersonCharacter
-  appearTimer: 8
+  appearTimer: 10.01
   rotate: 0
   rotateAxis: {x: 1, y: 0, z: 0}
   rotateSpeed: 1
@@ -3873,16 +3947,19 @@ MonoBehaviour:
   scaleStart: 1
   scaleEnd: 2
   scaleSpeed: 1
-  bounce: 0
+  bounce: 1
   bounceMagnitude: 0.03
   bounceSpeed: 0.03
   moveTowardsPlayer: 0
-  moveSpeed: 1
+  moveSpeedTowards: 1
   minDistance: 0.5
+  moveAwayFromPlayer: 0
+  moveSpeedAway: 0.1
+  maxDistance: 500
   showDistanceInLog: 0
   playSound: 1
-  soundToPlay: {fileID: 8300000, guid: 490da90a54a154f248f0942809db1c7c, type: 3}
-  volume: 1
+  soundToPlay: {fileID: 8300000, guid: 8ed9dd7f0de3267488904930cb3b17dd, type: 3}
+  volume: 100
   loop: 0
 --- !u!1 &736535472
 GameObject:
@@ -3995,8 +4072,11 @@ MonoBehaviour:
   bounceMagnitude: 1
   bounceSpeed: 1
   moveTowardsPlayer: 0
-  moveSpeed: 1
+  moveSpeedTowards: 1
   minDistance: 0.5
+  moveAwayFromPlayer: 0
+  moveSpeedAway: 0.1
+  maxDistance: 500
   showDistanceInLog: 0
   playSound: 0
   soundToPlay: {fileID: 0}
@@ -4113,8 +4193,11 @@ MonoBehaviour:
   bounceMagnitude: 1
   bounceSpeed: 1
   moveTowardsPlayer: 0
-  moveSpeed: 1
+  moveSpeedTowards: 1
   minDistance: 0.5
+  moveAwayFromPlayer: 0
+  moveSpeedAway: 0.1
+  maxDistance: 500
   showDistanceInLog: 0
   playSound: 0
   soundToPlay: {fileID: 0}
@@ -4231,8 +4314,11 @@ MonoBehaviour:
   bounceMagnitude: 0.5
   bounceSpeed: 0.5
   moveTowardsPlayer: 0
-  moveSpeed: 1
+  moveSpeedTowards: 1
   minDistance: 0.5
+  moveAwayFromPlayer: 0
+  moveSpeedAway: 0.1
+  maxDistance: 500
   showDistanceInLog: 1
   playSound: 1
   soundToPlay: {fileID: 8300000, guid: 490da90a54a154f248f0942809db1c7c, type: 3}
@@ -4473,8 +4559,11 @@ MonoBehaviour:
   bounceMagnitude: 1
   bounceSpeed: 4
   moveTowardsPlayer: 0
-  moveSpeed: 1
+  moveSpeedTowards: 1
   minDistance: 0.5
+  moveAwayFromPlayer: 0
+  moveSpeedAway: 0.1
+  maxDistance: 500
   showDistanceInLog: 0
   playSound: 0
   soundToPlay: {fileID: 0}
@@ -4591,8 +4680,11 @@ MonoBehaviour:
   bounceMagnitude: 1
   bounceSpeed: 1
   moveTowardsPlayer: 0
-  moveSpeed: 1
+  moveSpeedTowards: 1
   minDistance: 0.5
+  moveAwayFromPlayer: 0
+  moveSpeedAway: 0.1
+  maxDistance: 500
   showDistanceInLog: 0
   playSound: 0
   soundToPlay: {fileID: 0}
@@ -4975,8 +5067,11 @@ MonoBehaviour:
   bounceMagnitude: 1
   bounceSpeed: 1
   moveTowardsPlayer: 1
-  moveSpeed: 0.05
+  moveSpeedTowards: 1
   minDistance: 30
+  moveAwayFromPlayer: 0
+  moveSpeedAway: 0.1
+  maxDistance: 500
   showDistanceInLog: 0
   playSound: 1
   soundToPlay: {fileID: 0}
@@ -5157,8 +5252,11 @@ MonoBehaviour:
   bounceMagnitude: 1
   bounceSpeed: 2
   moveTowardsPlayer: 0
-  moveSpeed: 1
+  moveSpeedTowards: 1
   minDistance: 0.5
+  moveAwayFromPlayer: 0
+  moveSpeedAway: 0.1
+  maxDistance: 500
   showDistanceInLog: 0
   playSound: 0
   soundToPlay: {fileID: 0}
@@ -5251,8 +5349,11 @@ MonoBehaviour:
   bounceMagnitude: 1
   bounceSpeed: 1
   moveTowardsPlayer: 0
-  moveSpeed: 1
+  moveSpeedTowards: 1
   minDistance: 0.5
+  moveAwayFromPlayer: 0
+  moveSpeedAway: 0.1
+  maxDistance: 500
   showDistanceInLog: 0
   playSound: 0
   soundToPlay: {fileID: 0}
@@ -5572,7 +5673,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCameraName: FirstPersonCharacter
-  appearTimer: 5
+  appearTimer: 5.005
   rotate: 0
   rotateAxis: {x: 0, y: 0, z: 0}
   rotateSpeed: 1
@@ -5584,12 +5685,15 @@ MonoBehaviour:
   bounceMagnitude: 0.5
   bounceSpeed: 0.1
   moveTowardsPlayer: 0
-  moveSpeed: 1
+  moveSpeedTowards: 1
   minDistance: 0.5
+  moveAwayFromPlayer: 0
+  moveSpeedAway: 0.1
+  maxDistance: 500
   showDistanceInLog: 0
   playSound: 1
-  soundToPlay: {fileID: 8300000, guid: 490da90a54a154f248f0942809db1c7c, type: 3}
-  volume: 1
+  soundToPlay: {fileID: 8300000, guid: 6764404e4b1584f4f9e538b98c68a925, type: 3}
+  volume: 100
   loop: 0
 --- !u!1 &1090003257
 GameObject:
@@ -5834,8 +5938,11 @@ MonoBehaviour:
   bounceMagnitude: 1
   bounceSpeed: 1
   moveTowardsPlayer: 0
-  moveSpeed: 1
+  moveSpeedTowards: 1
   minDistance: 0.5
+  moveAwayFromPlayer: 0
+  moveSpeedAway: 0.1
+  maxDistance: 500
   showDistanceInLog: 0
   playSound: 0
   soundToPlay: {fileID: 0}
@@ -5865,8 +5972,11 @@ MonoBehaviour:
   bounceMagnitude: 1
   bounceSpeed: 1
   moveTowardsPlayer: 0
-  moveSpeed: 1
+  moveSpeedTowards: 1
   minDistance: 0.5
+  moveAwayFromPlayer: 0
+  moveSpeedAway: 0.1
+  maxDistance: 500
   showDistanceInLog: 0
   playSound: 0
   soundToPlay: {fileID: 0}
@@ -5896,8 +6006,11 @@ MonoBehaviour:
   bounceMagnitude: 2
   bounceSpeed: 1
   moveTowardsPlayer: 0
-  moveSpeed: 1
+  moveSpeedTowards: 1
   minDistance: 0.5
+  moveAwayFromPlayer: 0
+  moveSpeedAway: 0.1
+  maxDistance: 500
   showDistanceInLog: 0
   playSound: 0
   soundToPlay: {fileID: 0}
@@ -6083,8 +6196,11 @@ MonoBehaviour:
   bounceMagnitude: 0.1
   bounceSpeed: 1
   moveTowardsPlayer: 0
-  moveSpeed: 2
+  moveSpeedTowards: 1
   minDistance: 4
+  moveAwayFromPlayer: 0
+  moveSpeedAway: 0.1
+  maxDistance: 500
   showDistanceInLog: 1
   playSound: 1
   soundToPlay: {fileID: 8300000, guid: cac560cfb14de71439fd5f3771d2269d, type: 3}
@@ -6119,8 +6235,11 @@ MonoBehaviour:
   bounceMagnitude: 1
   bounceSpeed: 1
   moveTowardsPlayer: 0
-  moveSpeed: 1
+  moveSpeedTowards: 1
   minDistance: 0.5
+  moveAwayFromPlayer: 0
+  moveSpeedAway: 0.1
+  maxDistance: 500
   showDistanceInLog: 0
   playSound: 0
   soundToPlay: {fileID: 0}
@@ -6143,7 +6262,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCameraName: FirstPersonCharacter
-  appearTimer: 14
+  appearTimer: 20.021
   rotate: 1
   rotateAxis: {x: 0, y: 1, z: 0}
   rotateSpeed: 5
@@ -6155,12 +6274,15 @@ MonoBehaviour:
   bounceMagnitude: 1
   bounceSpeed: 1
   moveTowardsPlayer: 0
-  moveSpeed: 1
+  moveSpeedTowards: 1
   minDistance: 0.5
+  moveAwayFromPlayer: 1
+  moveSpeedAway: 0.03
+  maxDistance: 40
   showDistanceInLog: 0
   playSound: 1
-  soundToPlay: {fileID: 8300000, guid: 0cafcedd6f0d66744b6d1ee41c625c1b, type: 3}
-  volume: 1
+  soundToPlay: {fileID: 8300000, guid: 98e3c5764bf5a1442b956321b68be642, type: 3}
+  volume: 100
   loop: 0
 --- !u!1 &1219429329
 GameObject:
@@ -6521,8 +6643,11 @@ MonoBehaviour:
   bounceMagnitude: 1
   bounceSpeed: 1
   moveTowardsPlayer: 0
-  moveSpeed: 1
+  moveSpeedTowards: 1
   minDistance: 0.5
+  moveAwayFromPlayer: 0
+  moveSpeedAway: 0.1
+  maxDistance: 500
   showDistanceInLog: 0
   playSound: 1
   soundToPlay: {fileID: 0}
@@ -6550,7 +6675,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1323230670
 Transform:
   m_ObjectHideFlags: 0
@@ -6694,6 +6819,26 @@ Prefab:
     - target: {fileID: 400000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
       propertyPath: m_LocalEulerAnglesHint.y
       value: 136.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 8200000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
+      propertyPath: m_Volume
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8200000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
+      propertyPath: DopplerLevel
+      value: 3.33
+      objectReference: {fileID: 0}
+    - target: {fileID: 8200000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
+      propertyPath: spreadCustomCurve.m_Curve.Array.data[0].value
+      value: 0.46666667
+      objectReference: {fileID: 0}
+    - target: {fileID: 8200000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
+      propertyPath: Priority
+      value: 119
+      objectReference: {fileID: 0}
+    - target: {fileID: 8200000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
+      propertyPath: rolloffMode
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
@@ -7122,8 +7267,11 @@ MonoBehaviour:
   bounceMagnitude: 1
   bounceSpeed: 1
   moveTowardsPlayer: 0
-  moveSpeed: 1
+  moveSpeedTowards: 1
   minDistance: 0.5
+  moveAwayFromPlayer: 0
+  moveSpeedAway: 0.1
+  maxDistance: 500
   showDistanceInLog: 0
   playSound: 0
   soundToPlay: {fileID: 0}
@@ -7158,8 +7306,11 @@ MonoBehaviour:
   bounceMagnitude: 1
   bounceSpeed: 1
   moveTowardsPlayer: 0
-  moveSpeed: 1
+  moveSpeedTowards: 1
   minDistance: 0.5
+  moveAwayFromPlayer: 0
+  moveSpeedAway: 0.1
+  maxDistance: 500
   showDistanceInLog: 0
   playSound: 0
   soundToPlay: {fileID: 0}
@@ -7264,8 +7415,11 @@ MonoBehaviour:
   bounceMagnitude: 1
   bounceSpeed: 1
   moveTowardsPlayer: 0
-  moveSpeed: 1
+  moveSpeedTowards: 1
   minDistance: 0.5
+  moveAwayFromPlayer: 0
+  moveSpeedAway: 0.1
+  maxDistance: 500
   showDistanceInLog: 0
   playSound: 0
   soundToPlay: {fileID: 0}
@@ -7643,8 +7797,11 @@ MonoBehaviour:
   bounceMagnitude: 1
   bounceSpeed: 1
   moveTowardsPlayer: 0
-  moveSpeed: 1
+  moveSpeedTowards: 1
   minDistance: 0.5
+  moveAwayFromPlayer: 0
+  moveSpeedAway: 0.1
+  maxDistance: 500
   showDistanceInLog: 0
   playSound: 0
   soundToPlay: {fileID: 0}
@@ -7745,8 +7902,11 @@ MonoBehaviour:
   bounceMagnitude: 1
   bounceSpeed: 1
   moveTowardsPlayer: 1
-  moveSpeed: 1
+  moveSpeedTowards: 0.5
   minDistance: 15
+  moveAwayFromPlayer: 1
+  moveSpeedAway: 0.1
+  maxDistance: 500
   showDistanceInLog: 0
   playSound: 0
   soundToPlay: {fileID: 0}
@@ -8212,8 +8372,11 @@ MonoBehaviour:
   bounceMagnitude: 1
   bounceSpeed: 1
   moveTowardsPlayer: 0
-  moveSpeed: 1
+  moveSpeedTowards: 1
   minDistance: 0.5
+  moveAwayFromPlayer: 0
+  moveSpeedAway: 0.1
+  maxDistance: 500
   showDistanceInLog: 0
   playSound: 0
   soundToPlay: {fileID: 0}
@@ -8666,7 +8829,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainCameraName: FirstPersonCharacter
-  appearTimer: 11
+  appearTimer: 15.016
   rotate: 1
   rotateAxis: {x: 1, y: 0, z: 0}
   rotateSpeed: 1
@@ -8674,16 +8837,19 @@ MonoBehaviour:
   scaleStart: 1
   scaleEnd: 2
   scaleSpeed: 1
-  bounce: 0
-  bounceMagnitude: 1
-  bounceSpeed: 1
+  bounce: 1
+  bounceMagnitude: 0.5
+  bounceSpeed: 0.5
   moveTowardsPlayer: 0
-  moveSpeed: 1
+  moveSpeedTowards: 1
   minDistance: 0.5
+  moveAwayFromPlayer: 0
+  moveSpeedAway: 0.1
+  maxDistance: 500
   showDistanceInLog: 0
   playSound: 1
-  soundToPlay: {fileID: 8300000, guid: 490da90a54a154f248f0942809db1c7c, type: 3}
-  volume: 1
+  soundToPlay: {fileID: 8300000, guid: e16155c318263dd44b348e640a651da1, type: 3}
+  volume: 100
   loop: 0
 --- !u!1 &1742877932
 GameObject:
@@ -8865,8 +9031,11 @@ MonoBehaviour:
   bounceMagnitude: 1
   bounceSpeed: 1
   moveTowardsPlayer: 1
-  moveSpeed: 0.1
+  moveSpeedTowards: 1
   minDistance: 20
+  moveAwayFromPlayer: 0
+  moveSpeedAway: 0.1
+  maxDistance: 500
   showDistanceInLog: 0
   playSound: 0
   soundToPlay: {fileID: 0}
@@ -9384,8 +9553,11 @@ MonoBehaviour:
   bounceMagnitude: 1
   bounceSpeed: 1
   moveTowardsPlayer: 1
-  moveSpeed: 0.03
+  moveSpeedTowards: 1
   minDistance: 9
+  moveAwayFromPlayer: 0
+  moveSpeedAway: 0.1
+  maxDistance: 500
   showDistanceInLog: 1
   playSound: 1
   soundToPlay: {fileID: 8300000, guid: 5897aeed9b676024fbb8c694b421a861, type: 3}

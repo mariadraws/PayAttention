@@ -106,6 +106,7 @@ public class ObjectBehaviourController : MonoBehaviour {
     source.spatialBlend = 1f;
     source.clip = soundToPlay;
     source.volume = volume;
+    source.rolloffMode = AudioRolloffMode.Linear;
     source.Play();
   }
 
